@@ -1,0 +1,270 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  -webkit-box-shadow: 2px 1px 5px 1px;
+          box-shadow: 2px 1px 5px 1px;
+}
+
+.navbar a {
+  padding: 1em 0em;
+}
+
+.home {
+  margin-top: 6em;
+}
+
+.home .logo {
+  margin: 0 1.5em;
+}
+
+.home .blueAtlasBanner {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home .blueAtlasBanner .blueAtlas {
+  width: 90%;
+}
+
+/* About */
+.blueVideoSection {
+  padding: 3em 0;
+  color: #404040;
+  background-color: #87A9C4;
+  text-align: center;
+}
+
+.blueVideoSection .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+}
+
+.blueVideoSection .video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.blueVideoSection .blueVideoSection__text {
+  padding: 1em;
+}
+
+.blueVideoSection .blueVideoSection__text .lineHeight {
+  padding: 0.5em;
+}
+
+.blueVideoSection .blueVideoSection__text .welcome {
+  font-size: 2em;
+  padding-bottom: 3em;
+}
+
+.blueVideoSection .blueVideoSection__text .letterSpaced {
+  letter-spacing: 0.4em;
+}
+
+/* Floor Plans / Features */
+.featuresList {
+  padding-bottom: 2em;
+}
+
+.featuresList img {
+  padding-bottom: 2em;
+}
+
+.featuresList .features__blocks {
+  padding-top: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.featuresList .features__blocks .feature {
+  width: 400px;
+  padding: 1em 0;
+}
+
+.featuresList .features__blocks .feature h4 {
+  font-size: 1em;
+  font-weight: 700;
+  color: #404040;
+  padding: 0.5em;
+  border: dotted 2px #404040;
+}
+
+.featuresList .features__blocks .feature ul li {
+  font-size: 0.9em;
+  list-style: none;
+  margin: 1em auto;
+  color: #666666;
+}
+
+/* Plat Map */
+.platMap {
+  background-color: #575A59;
+  padding: 5em 0;
+}
+
+.platMap .mobilePlatmap {
+  width: 100%;
+}
+
+/* FAQ */
+.faq {
+  background-image: url(http://talohomesmillcreek.com/wp-content/uploads/2019/03/faq_bg-1.jpg?id=8177);
+  background-size: cover;
+  padding: 1em;
+}
+
+.faq h2 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.faq .accordion-section {
+  width: 100%;
+}
+
+.faq .accordion-section .panel-default > .panel-heading {
+  background: #f4f4f4;
+  padding: 0;
+  margin: 0 auto !important;
+}
+
+.faq .accordion-section .panel-default .panel-title a {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #666666;
+}
+
+.faq .accordion-section .panel-default .panel-title a:after {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-size: 3rem;
+  content: "\f106";
+  color: #666666;
+  float: right;
+  margin-top: -12px;
+}
+
+.faq .accordion-section .panel-default .panel-title a.collapsed:after {
+  content: "\f107";
+}
+
+.faq .accordion-section .panel-default .panel-body {
+  font-size: 1rem;
+  background-color: #f6f6f6;
+}
+
+/* CONTACT */
+.contact {
+  padding: 3em;
+}
+
+.contact .contact__block {
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .contact__block h1 {
+  padding: 1em 0;
+}
+
+.contact .contact__block h1, .contact .contact__block p {
+  text-align: right;
+}
+
+.contact .contact__block p {
+  color: #666666;
+  font-weight: 100;
+}
+
+/* FOOTER */
+footer {
+  background-color: #F9F9F9;
+  padding: 5em 3em;
+  font-size: 0.8em;
+  line-height: 1.9;
+}
+
+footer .footer__logo {
+  margin-bottom: 1em;
+}
+
+footer section {
+  margin-bottom: 4em;
+}
+
+.mobile {
+  display: inline-block;
+}
+
+.desktop {
+  display: none;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: inline-block;
+  }
+  .home .blueAtlasBanner {
+    max-width: 1024px;
+  }
+}
+
+@media screen and (min-width: 964px) {
+  .faq .accordion-section {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 988px) {
+  .navbar-nav {
+    position: absolute;
+    right: 3em;
+  }
+  .navbar-nav .nav-item {
+    margin: 0em 0.6em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
