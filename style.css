@@ -137,7 +137,7 @@ body {
 
 /* FAQ */
 .faq {
-  background-image: url(http://talohomesmillcreek.com/wp-content/uploads/2019/03/faq_bg-1.jpg?id=8177);
+  background-image: url(./public/images/faq_bg-1.jpg);
   background-size: cover;
   padding: 1em;
 }
